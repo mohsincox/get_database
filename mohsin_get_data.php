@@ -35,9 +35,11 @@
 
 	$y = 0;
 	foreach ($json['login'] as $key => $value) {
-		echo $json['login'][$y]['id'].'<br>';
-		echo $json['login'][$y]['username'].'<br>';
-		echo $json['login'][$y]['password'].'<br>';
+		if ($json['login'][$y]['username'] == 'mohsin') {
+			echo $json['login'][$y]['id'].'<br>';
+			echo $json['login'][$y]['username'].'<br>';
+			echo $json['login'][$y]['password'].'<br>';
+		}
 		$y++;	
 	}
 
